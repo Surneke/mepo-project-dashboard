@@ -1,26 +1,6 @@
 const { AddressModel } = require("../model/addressModel.jsx");
 const { UserModel } = require("../model/usersModel.jsx");
 
-const addValidator = (country,citySoum,zipPostCode,stateProvince,apartmentSuite) => {
-	const errs = {};
-	if (!country) {
-		errs.counry = "Please fill out this field";
-	}
-	if (!citySoum) {
-		errs.counry = "Please fill out this field";
-	}
-	if (!zipPostCode) {
-		errs.counry = "Please fill out this field";
-	}
-	if (!stateProvince) {
-		errs.counry = "Please fill out this field";
-	}
-	if (!apartmentSuite) {
-		errs.counry = "Please fill out this field";
-	}
-	return errs;
-};
-
 exports.addressController = {
 	createNewAddress: async (req, res) => {
 		try {
@@ -47,4 +27,24 @@ exports.addressController = {
 			return res.status(500).json({ msg: error.message })
 		}
 	}
+};
+
+const addValidator = (country, citySoum, zipPostCode, stateProvince, apartmentSuite) => {
+	const errs = {};
+	if (!country) {
+		errs.counry = "Please fill out this field";
+	}
+	if (!citySoum) {
+		errs.counry = "Please fill out this field";
+	}
+	if (!zipPostCode) {
+		errs.counry = "Please fill out this field";
+	}
+	if (!stateProvince) {
+		errs.counry = "Please fill out this field";
+	}
+	if (!apartmentSuite) {
+		errs.counry = "Please fill out this field";
+	}
+	return errs;
 };

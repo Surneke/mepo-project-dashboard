@@ -10,6 +10,8 @@ const ordersRoutes = require("./routes/ordersRouter.jsx");
 const addressRouter = require("./routes/addressRouter.jsx");
 const productsRouter = require("./routes/productsRouter.jsx");
 
+const server = require('http').createServer();
+const port = process.env.PORT || 4000;
 //appiin tohirgoog shalgah process.env
 dotenv.config();
 
@@ -45,5 +47,5 @@ process.on("SIGINT", () => {
 });
 
 connect(process.env.MONGODB_URL).then(() => {
-  app.listen(process.env.PORT, console.log(`Express server ${process.env.PORT}`));
+  app.listen(port, console.log(`Express server ${port}`));
 });
