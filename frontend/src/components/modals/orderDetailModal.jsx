@@ -88,11 +88,8 @@ export const BasicModal = ({ el }) => {
             </Box>
           </Box>
           <Box display="flex" justifyContent="space-between" mt="25px">
-            <Button variant="contained" onClick={handleClose}>
+            <Button variant="contained" onClick={handleClose} fullWidth>
               Close
-            </Button>
-            <Button variant="contained" color="info">
-              Save
             </Button>
           </Box>
         </Box>
@@ -106,7 +103,7 @@ const style = {
     top: "50%",
     left: "50%",
     width: 500,
-    height: 650,
+    height: 680,
     position: "absolute",
     transform: "translate(-50%, -50%)",
     bgcolor: "background.paper",

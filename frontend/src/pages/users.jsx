@@ -20,7 +20,7 @@ const Users = () => {
   const datas = users.map((el, index) => {
     return { ...el, id: el._id, index: index + 1, };
   });
-
+  console.log(datas);
   return (
     <Box style={style.container}>
       <Box style={style.box}>
