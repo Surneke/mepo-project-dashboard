@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f9;
+}
+.login_container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	justify-content: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../public/background.png");
+}
+.login_item {
+	width: 700px;
+	height: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+}
